@@ -86,6 +86,9 @@ module MdSimpleEditor
               end +
               button_tag(:type => 'button', class: "#{@md_builder.default_class} md_minus") do
                 fa_icon 'minus'
+              end +
+              button_tag(:type => 'button', class: "#{@md_builder.default_class} md_code") do
+                fa_icon 'code'
               end
         end
       end

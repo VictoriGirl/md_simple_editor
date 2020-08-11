@@ -46,6 +46,8 @@ md_simple_editor = () ->
               "\n[This is a link](http://google.com)\n"
             else if option == 'md_camera-retro'
               "\n![Alt](https://www.google.com.co/images/srpr/logo11w.png)\n"
+            else if option == 'md_code'
+              "\n```\nYour code here\n```\n"
 
       textarea = $('#md-editor #md-text textarea')
       insertAtCaret(textarea.attr('id'), text)
